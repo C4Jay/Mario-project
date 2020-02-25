@@ -2,17 +2,24 @@ import React,{ Component } from 'react';
 
 class Signin extends Component {
     state = {
+        mail: '',
+        password: ''
 
     }
 
     handleChnge = (e) => {
-        console.log(e)
+        this.setState({
+            [e.target.id]: e.target.value
+
+        })
 
     }
 
     handlePost = (e) => {
-        console.log(e)
+        e.preventDefault();
+        console.log(this.state)
 
+    
     }
 
 
@@ -22,12 +29,12 @@ class Signin extends Component {
             <form onSubmit={this.handlePost} className="white">
             <h5 className="grey-text text-darken-3" style={{ textAlign: 'center' }}>SignIn</h5>
             <div className="input-field">
-            <label htmlFor="mail"></label>
-            <input type ="email" id="email" onChange={this.handleChnge}></input>
+            <label htmlFor="mail">mail</label>
+            <input type ="email" id="mail" onChange={this.handleChnge}></input>
             </div>
 
             <div className="input-field">
-            <label htmlFor="password"></label>
+            <label htmlFor="password">password</label>
             <input type ="password" id="password" onChange={this.handleChnge}></input>
             </div>
 
