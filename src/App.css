@@ -1,7 +1,9 @@
-/* .App {
-  text-align: center;
+ .App {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: 'Yanone Kaffeesatz';
 }
-
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
