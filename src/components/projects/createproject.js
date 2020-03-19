@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 class Createproject extends Component {
     state = {
-        topic: '',
+        title: '',
         content: ''
 
     }
@@ -35,8 +35,8 @@ class Createproject extends Component {
             <h5 className="grey-text text-darken-3" style={{ textAlign: 'center' }}>Create Project</h5>
             
             <div className="input-field">
-            <label htmlFor="topic">Topic</label>
-            <input type ="text" id="topic" onChange={this.handleChnge}></input>
+            <label htmlFor="title">Topic</label>
+            <input type ="text" id="title" onChange={this.handleChnge}></input>
             </div>
 
             <div className="input-field ">
